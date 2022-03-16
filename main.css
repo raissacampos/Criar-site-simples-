@@ -1,15 +1,10 @@
- :root{
-    --green: #00FF00;
-    --white: #ffffff;
-    --black: #000000;
- }
-   * {
+  * {
     color: var(--fontColor);
     font-family: helvetica;
   }
+  
   body {
       background: var(--bg);
-    font-family: monospace;
 }
 ul{
     font-family: helvetica;
@@ -26,7 +21,7 @@ li {
     --bg: var(--green);
     --fontColor: var(--black);
     --btnBg: var(--black);
-    --btnFontColor: var(--green);
+    --btnFontColor: var(--white);
   }
   
   .dark-theme {
@@ -36,6 +31,12 @@ li {
     --btnFontColor: var(--black);
   }
 
+ :root{
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+ }
+
 .btn {
     position: absolute;
     top: 20px;
@@ -44,7 +45,9 @@ li {
     width: 50px;
     border-radius: 50%;
     border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
+    color: var(--btnfontcolor);
+    background-color: var(--btnbg);
   }
-  .btn:focus { outline-style: none; }
+  .btn:focus { 
+    outline-style: none; 
+  }
